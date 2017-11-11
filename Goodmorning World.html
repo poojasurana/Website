@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<style>
+			h1	{
+				text-align: center;
+				font-family: impact, "Trebuchet MS", sans-serif;
+				color:#8C001A;
+			}
+			h2 	{
+				color:white;
+				background-color:rgb(119, 97, 25);
+			}
+			h3	{
+				color:orange;
+			}
+			p 	{
+				color:blue;
+				font-size: 12;
+			}
+
+
+			body	{
+				/*background-image: url("https://i.ytimg.com/vi/rdGhwe1Q6LY/maxresdefault.jpg");*/
+				background-color:rgb(229, 223, 220);
+				font-family: helvetica, "Trebuchet MS", sans-serif;
+			}
+
+			#image1 {
+					max-height: 400px;
+					max-width: 2000px;
+			}
+
+
+			img 	{
+					max-height:300px;
+					max-width:300px;
+					height:auto;
+					width:auto;
+					margin: 10px;
+			}
+			#paragraph1	{
+				text-align: center;
+			}
+			#paragraph2	{
+				color: #8C001A;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" datatoggle="
+				collapse" data-target="#navbar" aria-expanded="false" ariacontrols="
+				navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Awesome Project</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#overview">Overview</a></li>
+				<li><a href="#features">Features</a></li>
+				</ul>
+				</div><!--/.nav-collapse -->
+				</div>
+		</nav>
+
+		<header>
+				<div class="container">
+				<div class="jumbotron">
+				<h1><span style="color:#8C001A">The Expression Cafe!</span></h1>
+				<p class="lead">Some description.
+				</p>
+				<p>
+				<a class="btn btn-lg btn-success" href="#"
+				role="button">See more</a>
+				</p>
+				</div>
+				</div>
+		</header>
+
+		<!--<p id="paragraph1"><img id="image1" src="C:\Users\pooja\Pictures\Vincent Van Gogh\Van Gogh_1.jpg"></p>-->
+				
+		<div class="container">
+			<div class="row">
+				<!--<div class="col-md-4">I am column 1.</div>-->
+				<div class="col-md-4"><img src="C:\Users\pooja\Pictures\Vincent Van Gogh\Van Gogh_13.jpg"></div>
+				<!--<div class="col-md-4">I am column 2.</div>-->
+				<div class="col-md-4"><img src="C:\Users\pooja\Pictures\Vincent Van Gogh\Van Gogh_1.jpg""></div>
+				<!--<div class="col-md-4">I am column 3.</div>-->
+				<div class="col-md-4"><img src="C:\Users\pooja\Pictures\Vincent Van Gogh\Van Gogh_14.jpg"></div>
+			</div>
+				<div class="row">
+				<div class="col-md-8">I am a larger column.</div>
+				<div class="col-md-2">I am a smaller column.</div>
+				<div class="col-md-2">I am a smaller column.</div>
+			</div>
+		</div>
+
+		<p id="myParagraph"></p>
+			<button type="button"onclick="document.getElementById('myParagraph').innerHTML = 'This is the best website ever!'">Click</button>
+
+		<p id="prettyParagraph"></p>
+		<button type="button" onclick="applyStyling()">Make it pretty!</button>
+
+		<script>
+			function applyStyling() {
+			var paragraph = document.getElementById("prettyParagraph");
+			paragraph.style.color = "green";
+			paragraph.style.fontSize = "29px";
+			paragraph.style.fontWeight = "700";
+			}
+		//</script>
+
+		<div><!--<h1><span style="color:#8C001A"><span style="font-size:40">"The Expression Cafe!!"</span></span></h1>-->
+		
+		<p id="paragraph2">I kept thinking about what to create for the longest period of time. I finally realized that if I don't start somewhere, I might end up never building anything. I realized it was more prudent to jump into the river, and learn to swim, than to look at the water from the shore. <strong>So, here I go!</strong>
+		We learn something new everyday. It does not have to be a learning in school, or college, or at work. We learn by talking to people. We learn by reading books. We learn by watching TV. We learn by surfing internet. This is a continuous process. I would love to share my learnings with you.</p>
+		
+		<p id="paragraph3"><small>Topics are as varied as technology, finance, society...</small></p>
+
+		</div>
+
+		
+		<ul style="list-style-type: square">
+			<li>Technology</li>
+			<li>Finance</li>
+			<li>Society</li>
+			<li>Life</li>
+			<li>Art</li>
+		</ul>
+
+		<h2><span style="color:white">Internet and World Wide Web</span></h2>
+		<p id="paragraph4">Remember the time when every evening we went out to play?</p>
+		<ol>
+			<h3><li>Moore's Law</li></h3>
+			<h3><li>Internet-map.net</li></h3>
+			<a href="http://internet-map.net/" target="_blank"> Internet Map Website</a>
+			<p id="paragraph5"><img src="http://internet-map.net/Content/info/info-eng.jpg"></p>
+			<h3><li>Dark Web</h3></li>
+		</ol>
+		<h2>Disrupt Yourself!</h2>
+		<p id="paragraph6">Disrupt yourself or the world will</p>
+
+		<ol>
+			<h3><li>Disruptive Innovation</h3></li>
+			<img src="https://marketoonist.com/wp-content/uploads/2016/03/160328.disruptive.jpg">
+			<p id="paragraph7"><small><em>(Image Credit: marketoonist.com)</em></small>
+		</ol>
+
+		<script>
+
+			alert("This is the best website ever!")
+			
+		</script>
+
+		<input id="numericInput" type="number">
+		<p id="result"></p>
+		<button type="button" onclick="testInput()">Test Input</button>
+		<script>
+			function testInput() {
+			// Create variable to store test result
+			var text;
+			// Get the value of the input field with id="numb"
+			var x = document.getElementById("numericInput").value;
+			if (isNaN(x) || x < 0 || x > 99) {
+			text = "Wrong input";
+			} else {
+			text = "Correct input";
+			}
+			// Display result
+			document.getElementById("result").innerHTML = text;
+			}
+		</script>
+
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+		</script>
+
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+		</script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+		</script>
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner" role="listbox">
+		<div class="item active">
+		This website is currently under contruction.
+		</div>
+		<div class="item">
+		Please share your feedback on theexpressioncafe@gmail.com.
+		</div>
+		</div>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$("#myCarousel").carousel({interval: 4000});
+			});
+		</script>
+
+	</body>
+</html>
